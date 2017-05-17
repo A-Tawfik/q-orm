@@ -47,7 +47,7 @@ return qOrm.qConnect('mysql://username:password@host/database')
 });
 ```
 
-##Supported methods
+## Supported methods
 
 - `qOrm.qConnect, qOrm.qExpress`
 - `db.qDefine, db.qExecQuery, db.qSync, db.qDrop`
@@ -55,13 +55,13 @@ return qOrm.qConnect('mysql://username:password@host/database')
 - `instance.qSave, instance.qRemove, instance.qValidate`
 - `instance.qGetAssociatedModel`, etc.
 
-##Notes
+## Notes
 
 - All methods inherit their habitual parameters from their callback-based counterparts. (Behind the scenes, we use `Q.nbind`.)
 - This is very beta! Works on my application (it's been tested extensively in there), but does not have its own unit tests yet.
 - Features such as `orm.enforce`, `orm.eq`, etc. are not wrapped. If you need them (such as in the example), you have to `require('orm')` as well.
 
-##TODO
+## TODO
 
 - Tests
 - More examples
